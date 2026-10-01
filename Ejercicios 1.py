@@ -29,6 +29,9 @@ print("--------------")
 print("\nExercici 3: Conversió de tipus")
 print("Converteix la cadena \"12345\" a un enter i després a un float.")
 print("Converteix el float 3.99 a un enter. Què passa?")
+print(int("12345"))
+print(float("12345"))
+print(int(3.99))
 
 
 ### Completa aquí
