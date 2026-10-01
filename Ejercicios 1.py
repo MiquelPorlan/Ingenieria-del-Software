@@ -48,6 +48,14 @@ print("Utilitza f-strings per imprimir una presentació.")
 
 ### Completa aquí
 
+
+"Hola! Em dic Miquel, tinc 21 anys i faig 1.80 metres"
+name = "Miquel"
+age = 21
+height = 1.80
+
+print(f"Hola! Em dic {name}, tinc {age} anys i faig {height} metres.")
+
 print("--------------")
 
 print("\nExercici 5: Nombres")
@@ -56,6 +64,10 @@ print("2. Arrodoneix el nombre amb round()")
 print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
+Pi = 3.14159
+Pi2 = round(Pi)
+resultado = Pi2 // 2
+print(f"El resultat de la divisió entera és: {resultado}")
 print("--------------")
 
 print("\nExercici 6: Conversor de temperatura")
@@ -64,6 +76,9 @@ print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32"
 print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
+C = float(input("Introdueix la temperatura en graus Celsius: "))
+F = (C * 9/5) + 32
+print(f"La temperatura en Fahrenheit és: {F}")
 
 print("--------------")
 
