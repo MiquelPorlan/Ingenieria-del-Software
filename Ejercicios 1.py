@@ -76,9 +76,10 @@ print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32"
 print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
+
 C = float(input("Introdueix la temperatura en graus Celsius: "))
 F = (C * 9/5) + 32
-print(f"La temperatura en Fahrenheit és: {F}")
+print(f"La temperatura en Fahrenheit es: {F}")
 
 print("--------------")
 
@@ -87,7 +88,15 @@ print("Demana el total d'un compte i el percentatge de propina.")
 print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
 
+
 ### Completa aquí
+Cuenta = float(input("Introdueix el total del compte: "))
+Propina100 = float(input("Introdueix el percentatge de propina: "))
+Propina = Cuenta * (Propina100 / 100)
+Total = Cuenta + Propina
+
+print(f"La propina és: {Propina:.2f}")
+print(f"El total a pagar és: {Total:.2f}")
 
 print("--------------")
 
@@ -97,3 +106,8 @@ print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 ### Completa aquí
+contraseña = input("Introdueix la contrasenya: ")
+if len(contraseña) >= 8:
+    print("Contrasenya vàlida")
+else:
+    print("Contrasenya no vàlida")
