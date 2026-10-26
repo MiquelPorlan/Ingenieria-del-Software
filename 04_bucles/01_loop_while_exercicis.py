@@ -60,8 +60,17 @@ while i<=10:
 # Un número és primer si només és divisible per 1 i per ell mateix.
 
 a = int(input("introduce un numero entero positivo:"))
-while a>1:
-    
+while a>0:
+    primo = True
+    i = a-1
+    while (primo & (i>1)):
+        if (a%i == 0):
+            primo = False
+        i -= 1
+    if primo:
+        print(a)
+    a -= 1        
+        
 
 # Exercici 7: Suma fins al zero
 # Demana a l'usuari que introdueixi números enters.
