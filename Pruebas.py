@@ -14,3 +14,8 @@ def rango(Valor1):
 print(rango(a))
 print(rango(b))
 print(rango(c))
+
+a = 234
+
+print(int(a))
+print(chr(a))
