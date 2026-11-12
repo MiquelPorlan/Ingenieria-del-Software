@@ -31,7 +31,7 @@ f = 1
 while i>1:
     f *= i
     i -= 1
-print(i)
+print(f)
 
 # Exercici 4: Validació de contrasenya
 # Demana a l'usuari que introdueixi una contrasenya.
@@ -77,18 +77,52 @@ while a>0:
 # Ves sumant els números introduïts fins que l'usuari introdueixi el 0.
 # Al final, imprimeix la suma total. El 0 només serveix per acabar i no s'ha de sumar.
 
+num = 1
+suma = 0
+while num:
+    num = int(input('intoruce un numero entero:'))
+    suma += num
+print(suma)
+
 # Exercici 8: Comptar les xifres d'un número
 # Demana a l'usuari que introdueixi un número enter positiu.
 # Comptabilitza quantes xifres té fent servir un bucle while.
 # Finalment, imprimeix el nombre de xifres.
+
+num = int(input("introduce un numero entero positivo:"))
+xifres = 0
+while num>0:
+    num //= 10
+    xifres += 1
+print(xifres)
 
 # Exercici 9: Seqüència de Fibonacci
 # Demana a l'usuari quants termes de la seqüència de Fibonacci vol veure.
 # Imprimeix aquest nombre de termes fent servir un bucle while.
 # La seqüència comença per 0 i 1; cada terme següent és la suma dels dos anteriors.
 
+n0 = 0
+n1 = 1
+n = int(input("introduce la cantidad de numeros de la secuencia de Fibonacci:"))
+i = 0
+while i<n:
+    print(n0)
+    n2 = n0 + n1
+    n0 = n1
+    n1 = n2
+    i += 1
+
 # Exercici 10: Joc d'endevinar el número
 # El número secret és el 7.
 # Demana a l'usuari que provi d'endevinar-lo i continua demanant números amb un bucle while
 # fins que l'encerti.
 # Després de cada intent incorrecte, indica si el número secret és més gran o més petit.
+
+numSecreto = 7
+num = 0
+while num != numSecreto:
+    num = int(input("intenta adivinar el numero secreto:"))
+    if num < numSecreto:
+        print("el numero secreto es mayor")
+    elif num > numSecreto:
+        print("el numero secreto es menor")
