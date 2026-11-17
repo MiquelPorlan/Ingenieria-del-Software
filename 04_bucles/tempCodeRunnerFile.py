@@ -1,8 +1,5 @@
-numSecreto = 7
-num = 0
-while num != numSecreto:
-    num = int(input("intenta adivinar el numero secreto:"))
-    if num < numSecreto:
-        print("el numero secreto es mayor")
-    elif num > numSecreto:
-        print("el numero secreto es menor")
+resistencies = [100, 220, 470, 1000]
+I=[]
+for R in resistencies:
+    I.append(12/R)
+print(I)    
