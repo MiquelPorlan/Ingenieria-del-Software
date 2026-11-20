@@ -88,13 +88,18 @@ for R in resistencies:
     I.append(12/R)
 print(I)    
 
-
-
 # Exercici 8: Mostres que superen el llindar de soroll
 # Un receptor ha mesurat aquests nivells de soroll (en dBm):
 # nivells_soroll = [-92, -85, -78, -95, -81, -88]
 # Compta, amb un bucle for, quantes mostres superen el llindar de -80 dBm
 # (és a dir, tenen un valor més gran que -80) i imprimeix el resultat.
+
+nivells_soroll = [-92, -85, -78, -95, -81, -88]
+i=0
+for n in nivells_soroll:
+    if n>-80:
+        i+=1
+print(f'{i} muestras superan el limite')
 
 # Exercici 9: Càlcul de la taxa d'error de bits
 # Compara els bits transmesos i rebuts:
@@ -103,8 +108,23 @@ print(I)
 # Fent servir un bucle for i els índexs de les llistes, compta quants bits
 # són diferents. Calcula i imprimeix la taxa d'error (bits diferents / total de bits).
 
+bits_transmesos = [1, 0, 1, 1, 0, 0, 1, 0]
+bits_rebuts   =   [1, 0, 0, 1, 0, 1, 1, 0]
+c=0
+for b in range(len(bits_transmesos)):
+    if bits_transmesos[b]!=bits_rebuts[b]:
+        c+=1
+print(c/len(bits_transmesos))
+        
+
 # Exercici 10: Període d'un senyal
 # Donades les freqüències següents, en hertzs:
 # frequencies = [50, 100, 500, 1000]
 # Fent servir un bucle for, calcula el període de cada senyal amb la fórmula
 # T = 1 / f i imprimeix cada freqüència amb el seu període en segons.
+
+frequencies = [50, 100, 500, 1000]
+for f in frequencies:
+    T=1/f
+    print(f'{f}Hz={T}s')
+    
